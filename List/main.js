@@ -15,4 +15,5 @@ list.Tail();
 list.at(2);
 list.pop();
 list.printList();
-
+list.contains("bug");
+list.findIndex("snake");

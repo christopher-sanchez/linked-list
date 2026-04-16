@@ -95,6 +95,34 @@ export class LinkedList{
          return removed;
 
         }
+        contains(value){
+            let current = this.head;
+             let has = false;
+            while(current){
+                if(value === current.value){
+                    has=true
+                }
+                current = current.nextNode;
+            }
+            
+             console.log(has);
+             return has;
+        }
+        findIndex(value){
+            let current = this.head;
+            let index = 0;
+            while(current){
+                if (value === current.value){
+                    console.log(index);
+                    return index;
+                  
+                }
+                current = current.nextNode;
+                index++;
+            }
+            console.log(-1);
+            return -1;
+        }
 
     prepend(value){
         const newNode = new Node(value,this.head);
