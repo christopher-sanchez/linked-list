@@ -46,9 +46,9 @@ export class LinkedList{
             }
             console.log(size)
         }
-        head(){
-            let head =this.head
-            console.log(head)
+        Head(){
+
+            console.log(this.head.value)
         }
 
     prepend(value){
