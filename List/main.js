@@ -1,5 +1,5 @@
 import { LinkedList } from "./Linked-list.js";
-const list = new LinkedList();
+let list = new LinkedList();
 
 list.append("dog");
 list.append("cat");
@@ -8,4 +8,4 @@ list.append("hamster");
 list.append("snake");
 list.append("turtle");
 
-console.log(list.toString());
+list.printList();
