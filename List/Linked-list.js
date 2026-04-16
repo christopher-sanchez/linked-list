@@ -72,6 +72,29 @@ export class LinkedList{
             } 
             
         }
+        pop(){
+         if(!this.head){
+            console.log("list is empty");
+            return null;
+         }   
+         if(!this.head.nextNode){
+            const removed = this.head;
+            this.head = null;
+            this.tail = null;
+            this.size--;
+            return removed;
+         }
+         let current = this.head;
+         while(current.nextNode.nextNode){
+            current = current.nextNode;
+         }
+         const removed = current.nextNode;
+         current.nextNode = null;
+         this.tail = current;
+         this.size--;
+         return removed;
+
+        }
 
     prepend(value){
         const newNode = new Node(value,this.head);

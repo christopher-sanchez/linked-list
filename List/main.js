@@ -13,3 +13,6 @@ list.Size();
 list.Head();
 list.Tail();
 list.at(2);
+list.pop();
+list.printList();
+
