@@ -11,3 +11,5 @@ list.append("turtle");
 list.printList();
 list.Size();
 list.Head();
+list.Tail();
+list.at(2);
