@@ -9,3 +9,5 @@ list.append("snake");
 list.append("turtle");
 
 list.printList();
+list.Size();
+list.head();

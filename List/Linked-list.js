@@ -14,6 +14,7 @@ export class LinkedList{
 
      append(value){
         const newnode = new Node(value)
+        this.size++;
         if(!this.head)
         {
             this.head=newnode
@@ -36,6 +37,20 @@ export class LinkedList{
             }
             console.log(results+'null')
         }
+        Size(){
+            let current = this.head
+            let size = 0
+            while(current){
+                size++
+                current=current.nextNode
+            }
+            console.log(size)
+        }
+        head(){
+            let head =this.head
+            console.log(head)
+        }
+
     prepend(value){
     }
 }
